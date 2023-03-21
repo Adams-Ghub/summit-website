@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.head-headline-box {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.humburger{
+  font-size: 36px; 
+  color: #272a31;
+}
+
+.head-headline-box::before {
+  content: "";
+  background-image: url("../images/headline_image.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.15;
+}
+
+head,
+.headline {
+  align-self: flex-start;
+}
+
+nav {
+  margin: 1rem 0 0 1.7rem;
+  padding: 0;
+  align-self: flex-start;
+}
+
+.headline {
+  margin: 3.5rem 1.2rem;
+}
+
+.hello {
+  color: #ec5242;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 6vw;
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  color: #ec5242;
+  font-family: "lato", sans-serif;
+  font-weight: 900;
+  line-height: 90%;
+  font-size: 9vw;
+  margin: 0 0 5vw 0;
+}
+
+.theme {
+  color: #272a31;
+  font-family: "lato", sans-serif;
+  font-weight: normal;
+  line-height: 5vw;
+  font-size: 3.5vw;
+  margin: 0;
+  padding: 3vw;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #eee;
+}
+
+.date {
+  color: #272a31;
+  font-family: "lato", sans-serif;
+  font-weight: 800;
+  font-size: 6vw;
+  padding: 0;
+  margin: 1.5vw 0 0 0;
+}
+
+.venue {
+  color: #272a31;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 4vw;
+  padding: 0;
+  margin: 0 0 3vw 0;
+}
