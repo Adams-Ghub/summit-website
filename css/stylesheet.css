@@ -1,22 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400&display=swap");
 
 body {
   margin: 0;
   padding: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 .head-headline-box {
   position: relative;
-  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.humburger{
-  font-size: 36px; 
+.humburger {
+  font-size: 36px;
   color: #272a31;
 }
 
@@ -32,7 +37,7 @@ body {
   opacity: 0.15;
 }
 
-head,
+header,
 .headline {
   align-self: flex-start;
 }
@@ -90,8 +95,272 @@ nav {
 .venue {
   color: #272a31;
   font-family: "lato", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 4vw;
   padding: 0;
   margin: 0 0 3vw 0;
+}
+
+.program {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/blackbackground.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-prog-text {
+  text-align: center;
+  color: #fff;
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  font-size: 5vw;
+  padding: 0;
+}
+
+.underline {
+  width: 7vw;
+  border-style: solid;
+  border-color: #ec5242;
+  border-width: 1px;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+}
+
+.prog-one,
+.prog-two,
+.prog-three,
+.prog-four,
+.prog-five {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(211, 211, 211, 0.2);
+  margin: 1rem;
+}
+
+.prog-icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.6rem;
+  align-self: center;
+}
+
+.prog-title {
+  align-self: center;
+  font-family: "loto", sans-serif;
+  font-weight: 600;
+  font-size: 4vw;
+  color: #ec5242;
+  width: 20%;
+}
+
+.prog-description {
+  width: 65%;
+  align-self: center;
+  font-family: "loto", sans-serif;
+  font-weight: 400;
+  font-size: 3.5vw;
+  color: #fff;
+}
+
+.join-btn {
+  background-color: #ec5242;
+  text-decoration: none;
+  align-self: center;
+  font-family: "loto", sans-serif;
+  font-weight: 300;
+  font-size: 3vw;
+  color: #fff;
+  padding: 6vw 10vw;
+  margin: 5vw 0;
+}
+
+.speakers {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.speaker-cards-box {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.underline-speaker {
+  width: 7vw;
+  color: #ec5242;
+  border-style: solid;
+  padding: 0;
+  margin: 0 0 5vw 0;
+  align-self: center;
+}
+
+.ft-speaker-txt {
+  text-align: center;
+  color: #272a31;
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  font-size: 5vw;
+  padding: 0;
+}
+
+.speaker-card {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 3vw 0;
+}
+
+.checkers {
+  width: 13vw;
+  height: 13vw;
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.speaker-img-box {
+  width: 30vw;
+  height: 35vw;
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr 0.5fr 1fr;
+  grid-template-rows: 0.3fr 0.7fr 0.5fr 1fr;
+}
+
+.speaker-img {
+  grid-column: 2/5;
+  grid-row: 2/5;
+  width: 26vw;
+  height: 26vw;
+}
+
+.speaker-info {
+  margin: 0 0 0 2vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  color: #272a31;
+  font-family: "lato", sans-serif;
+  font-weight: 600;
+  font-size: 3.5vw;
+  margin: 0.2vw 0;
+  padding: 0;
+}
+
+.role {
+  color: #ec5242;
+  font-family: "lato", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2.8vw;
+  margin: 0.2vw 0;
+  padding: 0;
+}
+
+.speaker-info > hr {
+  width: 5vw;
+  color: #272a31;
+  text-align: left;
+  padding: 0;
+  margin: 1.8vw 0;
+}
+
+.profile {
+  color: #272a31;
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.8vw;
+  margin: 0.2vw 0;
+  padding: 0;
+}
+
+.more-btn,
+.less-btn {
+  border: 1px solid #272a31;
+  text-decoration: none;
+  text-align: center;
+  color: #272a31;
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.8vw;
+  padding: 2vw;
+  margin: 0.2vw 0 4vw 0;
+}
+
+.partner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #272a31;
+  padding: 5vw 6vw;
+}
+
+.partner-logos-box {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 4vw 0;
+}
+
+.mtn-logo {
+  width: 15vw;
+  filter: grayscale(1);
+}
+
+.bel-aqua-logo {
+  width: 22vw;
+  filter: grayscale(1);
+}
+
+.voda-logo {
+  width: 15vw;
+  filter: grayscale(1);
+}
+
+.footer-logo {
+  width: 30vw;
+}
+
+.partner-heading {
+  text-align: center;
+  color: #fff;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 4vw;
+  padding: 0;
+  margin: 4vw 6vw 2vw 6vw;
+}
+
+.partner-underline {
+  width: 7vw;
+  border-style: solid;
+  border-color: #ec5242;
+  border-width: 1px;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 4vw 10vw;
+}
+
+.copyright-text {
+  width: 40vw;
+  align-self: center;
+  color: #272a31;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 2vw;
+  padding: 0;
 }
