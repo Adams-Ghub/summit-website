@@ -12,31 +12,89 @@
     <title>About National Technology and Health Summit</title>
   </head>
   <body>
+    <header class="desktop-header">
+      <div class="social-media"></div>
+      <nav class="desktop-nav">
+        <a class="logo-link" href="./index.html"
+          ><img class="logo" src="./images/logo.png" alt="logo"
+        /></a>
+        <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="">Join</a></li>
+          <li><a href="">Sponsor</a></li>
+          <li><a href="">News</a></li>
+          <li class="campaign"><a href="">Campaign</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="head-headline-box">
-      <header>
-        <nav>
-          <a href="#" class="menu-btn"><i class="fa fa-bars humburger"></i></a>
-        </nav>
-      </header>
-      <section class="headline">
-        <p class="hello">"Hello! Sharing World"</p>
-        <h1 class="title">National Technlology and Health Summit 2021</h1>
-        <p class="summit-profile">
-          This National summit brings together the community of experts,
-          academics and activists who make up the Technology and Health summit
-          every year. This year we hope to expand our invitation list to
-          individuals and organizations.
-        </p>
-        <p class="contact-invite">
-          For further enquiries about National Technology and Health Summit
-          please do not hesitate to contact us via our email below
-        </p>
-        <p class="mail-box">
-          <a class="mail" href="mailto:info@nationaltechnologysummit.com"
-            >info@nationaltechnologysummit.com</a
-          >
-        </p>
-      </section>
+      <div class="image-overlay">
+        <header class="mobile-header">
+          <nav class="mobile-nav">
+            <a href="#" class="menu-btn" onclick="openMobileMenu()"
+              ><i class="fa fa-bars humburger"></i
+            ></a>
+          </nav>
+          <div class="menu-popup hidden" id="menu-popup">
+            <div class="close-btn-box">
+              <a onclick="openMobileMenu()">
+                <img src="./images/Union.png" alt=""
+              /></a>
+            </div>
+            <ul>
+              <li>
+                <a
+                  href="./index.html"
+                  onclick="toggleButtonHide('.menu-popup')"
+                >
+                  Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./about.html"
+                  onclick="toggleButtonHide('.menu-popup')"
+                >
+                  About</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="toggleButtonHide('.menu-popup')">
+                  Program</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="toggleButtonHide('.menu-popup')">
+                  Sponsor</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="toggleButtonHide('.menu-popup')"> News</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <section class="headline">
+          <p class="hello">"Hello! Sharing World"</p>
+          <h1 class="title">National Technlology and Health Summit 2021</h1>
+          <p class="summit-profile">
+            This National summit brings together the community of experts,
+            academics and activists who make up the Technology and Health summit
+            every year. This year we hope to expand our invitation list to
+            individuals and organizations.
+          </p>
+          <p class="contact-invite">
+            For further enquiries about National Technology and Health Summit
+            please do not hesitate to contact us via our email below
+          </p>
+          <p class="mail-box">
+            <a class="mail" href="mailto:info@nationaltechnologysummit.com"
+              >info@nationaltechnologysummit.com</a
+            >
+          </p>
+        </section>
+      </div>
     </div>
     <section class="logo-section">
       <h2 class="logo-sec-title">
@@ -59,13 +117,19 @@
       <p class="past-summit-text">
         take a look at the last two National Technology and Health Summit
       </p>
-      <div class="first-summit">
-        <h3>2019</h3>
-        <p>National Technlology and Health Summit 2019, Accra</p>
-      </div>
-      <div class="second-summit">
-        <h3>2020</h3>
-        <p>National Technlology and Health Summit 2019, Kumasi</p>
+      <div class="first-second-summits">
+        <div class="first-summit">
+          <div class="first-sum-overlay">
+            <h3>2019</h3>
+            <p>National Technlology and Health Summit 2019, Accra</p>
+          </div>
+        </div>
+        <div class="second-summit">
+          <div class="first-sum-overlay">
+            <h3>2020</h3>
+            <p>National Technlology and Health Summit 2019, Kumasi</p>
+          </div>
+        </div>
       </div>
     </section>
     <section class="partner">
@@ -87,5 +151,7 @@
         2023 National Technology & Health Summit. All Rights Reserved
       </div>
     </footer>
+
+    <script type="text/javascript" src="./js/script.js"></script>
   </body>
 </html>
