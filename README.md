@@ -3,8 +3,6 @@
   <h2><b>Summit Website</b></h2>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -29,7 +27,7 @@
 
 
 
-# 📖 [Summit Website] <a name="about-project"></a>
+# 📖 Summit Website <a name="about-project"></a>
 
 **Summit Website** is a personal project about a summit entitled National Technology and Health Summit. I developed this project as away to apply my knowledge and skills I have acquiered to build a conference or summit website. 
 
@@ -46,8 +44,6 @@
   </ul>
 </details>
 
-<!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
 - **Responsive:** This project is responsive to mobile, tablets and desktop compouters
@@ -63,8 +59,6 @@
 - [Live Demo Link](https://google.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -165,8 +159,7 @@ If you like this project help me propagate it more by following it's demo videos
 I would like to acknowledge and thank the following people. This project wouldn't have been possible without them.
 <ol>
     <li>Cindy Shin for her design base on which this website was built </li>
-    <li>Josua Sortino for his great picture used for the background of the headline section</li>
-    <li>Run the command "npx stylelint "**/*.{css,scss}"" to test for css linter errors/li>       
+    <li>Josua Sortino for his great picture used for the background of the headline section</li>       
 </ol>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -174,15 +167,13 @@ I would like to acknowledge and thank the following people. This project wouldn'
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+- **How do I implement the mobile menu toggle feature?**
 
-- **[Question_1]**
+  - create a function that opens and closes the menu in your javascript file and pass it as an event handler to the onclick lister for the hamburger button. Refer to the block of codes (lines 48-51) in script.js file in the project.
 
-  - [Answer_1]
+- **How do I make some features or elements show in the mobile version and disappear in the destop version and vice versa?**
 
-- **[Question_2]**
-
-  - [Answer_2]
+  - if you want element A to show in the mobile and not in the desktop version, what you do is, in the media queries for desktop apply the rule of "display:none" to the css selector  of element A. On the other hand, if you want it to show in the destop version and not in the mobile, apply "display:none" rule to it in the media queries for mobile and for the same selector of element A you apply the "display:block" rule in the media query for the desktop.   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
