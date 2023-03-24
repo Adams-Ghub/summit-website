@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/about.css" />
+    <title>About National Technology and Health Summit</title>
+  </head>
+  <body>
+    <header class="desktop-header">
+      <div class="social-media">
+        <a href="#"><i class="fa fa-facebook fb-logo"></i></a>
+        <a href="#"><i class="fa fa-twitter twitter-logo"></i></a>
+        <a class="social-txt-link" href="#">English</a>
+        <a class="social-txt-link" href="#">My Page</a>
+        <a class="social-txt-link" href="#">Logout</a>
+      </div>
+      <nav class="desktop-nav">
+        <a class="logo-link" href="./index.html"
+          ><img class="logo" src="./images/logo.png" alt="logo"
+        /></a>
+        <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="">Join</a></li>
+          <li><a href="">Sponsor</a></li>
+          <li><a href="">News</a></li>
+          <li class="campaign"><a href="">Campaign</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="head-headline-box">
+      <div class="image-overlay">
+        <header class="mobile-header">
+          <nav class="mobile-nav">
+            <a href="#" class="menu-btn" onclick="openMobileMenu()"
+              ><i class="fa fa-bars humburger"></i
+            ></a>
+          </nav>
+          <div class="menu-popup hidden" id="menu-popup">
+            <div class="close-btn-box">
+              <a onclick="openMobileMenu()">
+                <img src="./images/Union.png" alt="close button image"
+              /></a>
+            </div>
+            <ul>
+              <li>
+                <a
+                  href="./index.html"
+                  onclick="toggleButtonHide('.menu-popup')"
+                >
+                  Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./about.html"
+                  onclick="toggleButtonHide('.menu-popup')"
+                >
+                  About</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="toggleButtonHide('.menu-popup')">
+                  Program</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="toggleButtonHide('.menu-popup')">
+                  Sponsor</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="toggleButtonHide('.menu-popup')"> News</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <section class="headline">
+          <p class="hello">"Hello! Sharing World"</p>
+          <h1 class="title">National Technlology and Health Summit 2021</h1>
+          <p class="summit-profile">
+            This National summit brings together the community of experts,
+            academics and activists who make up the Technology and Health summit
+            every year. This year we hope to expand our invitation list to
+            individuals and organizations.
+          </p>
+          <p class="contact-invite">
+            For further enquiries about National Technology and Health Summit
+            please do not hesitate to contact us via our email below
+          </p>
+          <p class="mail-box">
+            <a class="mail" href="mailto:info@nationaltechnologysummit.com"
+              >info@nationaltechnologysummit.com</a
+            >
+          </p>
+        </section>
+      </div>
+    </div>
+    <section class="logo-section">
+      <h2 class="logo-sec-title">
+        National Technlology and Health Summit 2021 Logo
+      </h2>
+      <hr class="about-underline" />
+      <p class="logo-description">
+        The logo this year was decided through a logo competition for a month
+      </p>
+      <div class="logo-box">
+        <img
+          class="about-logo"
+          src="./images/logo.png"
+          alt="national technology and health summit logo"
+        />
+      </div>
+    </section>
+    <hr />
+    <section class="past-summit">
+      <h2 class="past-summit-title">
+        See the past National Technology & Health Summit
+      </h2>
+      <hr class="past-summit-underline" />
+      <p class="past-summit-text">
+        take a look at the last two National Technology and Health Summit
+      </p>
+      <div class="first-second-summits">
+        <div class="first-summit">
+          <div class="first-sum-overlay">
+            <h3>2019</h3>
+            <p>National Technlology and Health Summit 2019, Accra</p>
+          </div>
+        </div>
+        <div class="second-summit">
+          <div class="first-sum-overlay">
+            <h3>2020</h3>
+            <p>National Technlology and Health Summit 2019, Kumasi</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partner">
+      <h2 class="partner-heading">Partner</h2>
+      <hr class="partner-underline" />
+      <div class="partner-logos-box">
+        <img
+          class="bel-aqua-logo"
+          src="./images/bel-aqua.png"
+          alt="bel-aqua logo"
+        />
+        <img class="mtn-logo" src="./images/mtn.jpg" alt="MTN logo" />
+        <img
+          class="voda-logo"
+          src="./images/vodafone.png"
+          alt="Vodafone Ghana logo"
+        />
+      </div>
+    </section>
+    <footer>
+      <img
+        class="footer-logo"
+        src="./images/logo.png"
+        alt="national technology and health summit logo"
+      />
+      <div class="copyright-text">
+        2023 National Technology & Health Summit. All Rights Reserved
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
