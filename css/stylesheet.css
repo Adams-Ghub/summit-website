@@ -415,8 +415,29 @@ footer {
 
   .desktop-header {
     display: block;
+  }
+
+  .social-media {
+    background-color: #3e3e3e;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2vw;
+    padding: 0.5vw 9vw;
+  }
+
+  .fb-logo,
+  .twitter-logo {
+    font-size: 1.5vw;
+    color: #fff;
+  }
+
+  .social-txt-link {
+    text-decoration: none;
+    color: #fff;
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
   }
 
   .logo-link {
@@ -433,12 +454,12 @@ footer {
     text-decoration: none;
     display: flex;
     justify-content: flex-start;
+    gap: 3vw;
     padding: 0;
   }
 
   .menu > li {
     list-style: none;
-    margin: 0 1.5vw;
     align-self: center;
   }
 
@@ -466,7 +487,6 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 0 9vw;
-    width: 100%;
   }
 
   .campaign {
